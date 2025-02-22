@@ -1,0 +1,43 @@
+# Binaries
+/bin
+/.bin
+/build
+/dist
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Vendor directory (for dependencies)
+/vendor/
+
+# IDE files
+.idea/
+.vscode/
+
+# GoLand IDE files
+/.idea/
+
+# MacOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Go Modules
+/go.sum
+
+# Go Workspace
+/go.work
+
+# Coverage output
+*.coverprofile
