@@ -61,7 +61,7 @@ func GetTransactionDetail(w http.ResponseWriter, r *http.Request) {
 	var transaction models.Transaction
 	if err := database.DB.Preload("Details").
 		Preload("Details.Voucher").
-		Preload("Details.Voucher.Brand"). // Add preload for Brand here
+		Preload("Details.Voucher.Brand").
 		First(&transaction, id).Error; err != nil {
 		utils.SendError(w, http.StatusNotFound, "Transaction not found")
 		return
