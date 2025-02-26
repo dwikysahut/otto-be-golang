@@ -27,6 +27,5 @@ func SetupTestDB() {
 		log.Fatalf("failed to connect to test database: %v", err)
 	}
 
-	// Auto-migrate the schema for testing
 	DB.AutoMigrate(&models.Brand{})
 }
